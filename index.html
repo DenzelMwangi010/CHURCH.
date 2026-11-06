@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.C.K St.Peter's Church Kangemi.</title>
+    <style>
+        /* Base styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        /* Hero / Header Section */
+        header {
+            background: linear-gradient(rgba(0, 32, 96, 0.7), rgba(0, 32, 96, 0.7)), 
+                        url('https://images.unsplash.com/photo-1438032005730-c779502df39b?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 15px;
+        }
+        header p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* Section Styling */
+        section {
+            background: #fff;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        h2 {
+            color: #002060;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 8px;
+        }
+
+        /* About Section */
+        .about-text {
+            font-size: 1.05rem;
+            color: #555;
+        }
+
+        /* Photo Cards Grid */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            border-radius: 8px;
+            overflow: hidden;
+            background: #fafafa;
+            border: 1px solid #eee;
+        }
+        .card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+        .card-content {
+            padding: 15px;
+        }
+        .card-content h3 {
+            color: #002060;
+            margin-bottom: 8px;
+        }
+
+        /* Service Schedule List */
+        .services-list {
+            list-style: none;
+        }
+        .services-list li {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 0;
+            border-bottom: 1px dashed #ddd;
+        }
+        .services-list li:last-child {
+            border-bottom: none;
+        }
+        .service-name {
+            font-weight: bold;
+            color: #222;
+        }
+        .service-time {
+            color: #002060;
+            font-weight: 600;
+        }
+
+        /* Bible Verse Footer */
+        footer {
+            background-color: #002060;
+            color: #fff;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 40px;
+        }
+        .verse-box {
+            max-width: 700px;
+            margin: 0 auto;
+            font-style: italic;
+            font-size: 1.1rem;
+        }
+        .verse-reference {
+            display: block;
+            margin-top: 10px;
+            font-style: normal;
+            font-weight: bold;
+            color: #ffc000;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Warm Welcome / Hero Header -->
+    <header>
+        <h1>Welcome to The A.C.K St.Peter's Church Kangemi.</h1>
+        <p>We are delighted to have you here! Whether you are seeking a place to worship, grow in faith, or find community, our doors and hearts are wide open for you.</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- Church Description -->
+        <section id="about">
+            <h2>About Our Church</h2>
+            <p class="about-text">
+                Our church is a vibrant community rooted in love, faith, and service. We believe in building a welcoming home for individuals and families to connect with God, discover their purpose, and grow together in Christ. Join us as we share God's light and love with our community and the world.
+            </p>
+        </section>
+
+        <!-- Current & Future Building Photos -->
+        <section id="gallery">
+            <h2>Our Journey & Vision</h2>
+            <div class="grid-2">
+                <!-- Current Church -->
+                <div class="card">
+                    <!-- Replace the image URL below with your actual current church photo link -->
+                    <img src="https://images.unsplash.com/photo-1548625149-fc4a29cf7092?auto=format&fit=crop&w=600&q=80" alt="Current Church Building">
+                    <div class="card-content">
+                        <h3>Our Current Sanctuary</h3>
+                        <p>Where we gather weekly for praise, prayer, and fellowship.</p>
+                    </div>
+                </div>
+
+                <!-- Future Planned Church -->
+                <div class="card">
+                    <!-- Replace the image URL below with your planned church render/photo link -->
+                    <img src="https://images.unsplash.com/photo-1519817650390-64a93db51149?auto=format&fit=crop&w=600&q=80" alt="Future Planned Church">
+                    <div class="card-content">
+                        <h3>Our Future Vision</h3>
+                        <p>An architectural vision for our upcoming expansion to serve more families.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Times -->
+        <section id="services">
+            <h2>Service Times</h2>
+            <ul class="services-list">
+                <li>
+                    <span class="service-name">Sunday Morning Prayer</span>
+                    <span class="service-time">8:00 AM - 9:00 AM</span>
+                </li>
+                <li>
+                    <span class="service-name">Main Sunday Worship Service</span>
+                    <span class="service-time">9:30 AM - 11:30 AM</span>
+                </li>
+                <li>
+                    <span class="service-name">Wednesday Mid-Week Bible Study</span>
+                    <span class="service-time">6:00 PM - 7:30 PM</span>
+                </li>
+                <li>
+                    <span class="service-name">Friday Youth & Fellowship Night</span>
+                    <span class="service-time">5:30 PM - 7:00 PM</span>
+                </li>
+            </ul>
+        </section>
+
+    </div>
+
+    <!-- Bible Verse & Closing Footer -->
+    <footer>
+        <div class="verse-box">
+            <p>"Come to me, all you who are weary and burdened, and I will give you rest."</p>
+            <span class="verse-reference">— Matthew 11:28</span>
+        </div>
+    </footer>
+
+</body>
+</html>
